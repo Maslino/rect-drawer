@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>rect drawer demo</title>
+</head>
+<body>
+    <center>
+        <div id="container"></div>
+    </center>
+    <script src="kinetic.min.js"></script>
+    <script src="drawer.js"></script>
+    <script type="text/javascript">
+        var stage = new Kinetic.Stage({
+            container: 'container',
+            width: 800,
+            height: 600,
+        });
+        // black background
+        var bgLayer = new Kinetic.Layer();
+        bgLayer.add(new Kinetic.Rect({x: 0, y: 0, width: stage.width(), height: stage.height(), fill: 'black'}));
+        stage.add(bgLayer);
+        init(stage);
+    </script>
+</body>
+</html>
