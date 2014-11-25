@@ -5,7 +5,7 @@ Rect drawer demo using KineticJS
 
 ### Functions
  - rect draw (binding mousedown, mousemove, mouseup events)
- - rect move (binding dragmove event)
+ - rect move (set draggable to true)
  - rect resize (binding dragmove event)
  - rect delete (binding double click event)
 
